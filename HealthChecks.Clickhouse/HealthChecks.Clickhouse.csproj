@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+<PropertyGroup>
+    <FileVersion>1.0.0</FileVersion>
+    <Product>HealthChecks.ClickHouse</Product>
+    <Authors>Kuzminov Stanislav</Authors>
+    <Description>ClickHouse db health check</Description>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Title>HealthChecks.ClickHouse</Title>
+    <PackageId>HealthChecks.ClickHouse</PackageId>
+    <PackageTags>clickhouse healthcheck </PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/skuzminoff/HealthChecks.ClickHouse</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl> 
+ </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+     <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE" Pack="true" PackagePath="." />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="2.2.5" />
+    <PackageReference Include="ClickHouse.Net" Version="0.4.2" />
+  </ItemGroup>
+</Project>
